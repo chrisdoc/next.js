@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -13,7 +14,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js</a> on Docker!
         </h1>
-
+        <Image
+          src="https://via.placeholder.com/300"
+          alt="Picture of a placeholder"
+          width={300}
+          height={300}
+        />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
